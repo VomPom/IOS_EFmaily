@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="login_forget">
+            <connections>
+                <outlet property="forget_next" destination="7RF-FB-ZTd" id="tCo-uQ-csi"/>
+                <outlet property="forget_phone" destination="88B-B3-d8t" id="YQ7-tz-1Mw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写要找回密码的手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbZ-ai-knJ">
+                    <rect key="frame" x="86" y="101" width="204" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88B-B3-d8t">
+                    <rect key="frame" x="37" y="150" width="300" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bOT-gw-AGV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-FB-ZTd">
+                    <rect key="frame" x="37" y="213" width="300" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="ToT-3f-NTD"/>
+                        <constraint firstAttribute="height" constant="30" id="cbP-xy-ue9"/>
+                    </constraints>
+                    <state key="normal" title="下一步" backgroundImage="lightgreen">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="forgettonext" destination="-1" eventType="touchUpInside" id="POU-CW-myg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.94665948275862066" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="88B-B3-d8t" secondAttribute="trailing" constant="38" id="3bp-m8-GYz"/>
+                <constraint firstAttribute="trailing" secondItem="nbZ-ai-knJ" secondAttribute="trailing" constant="85" id="4lQ-Qq-THJ"/>
+                <constraint firstItem="nbZ-ai-knJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="101" id="9eM-nj-hPW"/>
+                <constraint firstItem="88B-B3-d8t" firstAttribute="top" secondItem="nbZ-ai-knJ" secondAttribute="bottom" constant="28" id="gIR-y6-laV"/>
+                <constraint firstItem="88B-B3-d8t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="hLe-z2-P2H"/>
+                <constraint firstItem="7RF-FB-ZTd" firstAttribute="top" secondItem="88B-B3-d8t" secondAttribute="bottom" constant="33" id="hPB-LM-Hgk"/>
+                <constraint firstItem="7RF-FB-ZTd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jJV-l6-Ssf"/>
+                <constraint firstItem="nbZ-ai-knJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="86" id="p6M-q9-Y9Z"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lightgreen" width="121" height="121"/>
+    </resources>
+</document>

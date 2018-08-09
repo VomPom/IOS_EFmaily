@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  微享圈
+//
+//  Created by Mac on 15/12/3.
+//  Copyright © 2015年 Mac. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#ifdef DEBUG // 处于开发阶段
+#define HCLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define HCLog(...)
+#endif
+
+#define iOS9 ([[UIDevice currentDevice].systemVersion floatValue] >= 9.0)
+#define iOS8 ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+
+// RGB颜色
+#define HCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define HCRandomColor HCColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define HCSystemHeight [UIScreen mainScreen].bounds.size.height
+#define HCSystemWidth  [UIScreen mainScreen].bounds.size.width
+#define alert(__MSG){MBFadeAlertView *alert = [[MBFadeAlertView alloc]init];[alert showAlertWith:@__MSG];}
+
+#endif /* PrefixHeader_pch */
+

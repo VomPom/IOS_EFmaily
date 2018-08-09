@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C8BF9F2FDB0D59B57F26918445751F4C5A168FEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "26768AAE51224CA0B1473120458791653047ABFB" : 0,
+    "C8BF9F2FDB0D59B57F26918445751F4C5A168FEB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE62FD2C-2FFE-492E-BD49-49CF237F2E01",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "26768AAE51224CA0B1473120458791653047ABFB" : "..\/Downloads\/FYAlbum",
+    "C8BF9F2FDB0D59B57F26918445751F4C5A168FEB" : "Family\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Family",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Family\/Family.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ifgyong\/FYAlbum.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26768AAE51224CA0B1473120458791653047ABFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/hc_coder\/Family.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8BF9F2FDB0D59B57F26918445751F4C5A168FEB"
+    }
+  ]
+}
